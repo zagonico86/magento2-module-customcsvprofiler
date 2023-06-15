@@ -1,4 +1,4 @@
-# Mage2 Module Zagonico CustomCsvProfiler
+# Magento 2 csvfile profiler - one request per file
 
     ``zagonico/module-customcsvprofiler``
 
@@ -13,13 +13,15 @@
 
 
 ## Main Functionalities
-Csvfile profiler that output one request per file.
+Csvfile profiler that output one request per file instead of replacing var\log\profiler.log at each request.
 
 You can enable this profiler using the command:
 ```
 php bin\magento dev:profiler:enable "\\Zagonico\\CsvCustomProfiler\\Output\\Csvfile"
 ```
 This class extends the standard  `csvfile` profiler type, but instead of overwriting the var/log/profiler.csv file each time, it creates a new file var/log/profiler-timestamp-random.csv.
+
+You can read a discussion also at [https://www.zagonico.com/magento-2-csvfile-profiler-one-request-per-file/](https://www.zagonico.com/magento-2-csvfile-profiler-one-request-per-file/).
 
 ## Installation
 \* = in production please use the `--keep-generated` option
