@@ -1,0 +1,22 @@
+{
+    "name": "zagonico/module-customcsvprofiler",
+    "description": "Csvfile profiler that output one request per file",
+    "type": "magento2-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zagonico",
+            "email": "zago.nicola@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Zagonico\\CustomCsvProfiler\\": ""
+        }
+    }
+}
